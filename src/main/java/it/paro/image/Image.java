@@ -1,14 +1,14 @@
-package it.paro.donut;
+package it.paro.image;
 
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 
-public class Donut extends JFrame {
+public class Image extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 
-	public Donut() {
+	public Image() {
 		super();
 		initUI();
 	}
@@ -16,16 +16,16 @@ public class Donut extends JFrame {
 	private void initUI() {
 		add(new Board());
 		setResizable(false);
-		setSize(330, 330);
-		setTitle("Donut");
+		pack();
+		setTitle("Image");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setLocationRelativeTo(null);
 	}
 
 	public static void main(String[] args) {
 		EventQueue.invokeLater(() -> {
-			Donut donut = new Donut();
-			donut.setVisible(true);
+			Image image = new Image();
+			image.setVisible(true);
 		});
 	}
 
